@@ -107,7 +107,7 @@ def shortest_path(source, target):
                 child = Node(actor, node, movie)
                 if child.state == target:
                     while child.parent is not None:
-                        short_path.insert(0, [child.action, child.state])
+                        short_path.insert(0, (child.action, child.state))
                         child = child.parent
                     return short_path
                 else:
