@@ -83,7 +83,6 @@ def terminal(board):
     """
     Returns True if game is over, False otherwise.
     """
-
     if winner(board) is not None or (not any(EMPTY in sublist for sublist in board) and winner(board) is None):
         return True
     else:
