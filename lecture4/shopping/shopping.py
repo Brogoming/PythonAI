@@ -128,6 +128,7 @@ def evaluate(labels, predictions):
             pos += 1
             if lab == pre:
                 truePos += 1
+    print(truePos, pos, trueNeg, neg)
     return truePos/pos, trueNeg/neg
 
 
